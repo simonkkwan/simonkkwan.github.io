@@ -1,0 +1,1125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500);
+
+*{
+	font-family:Raleway;
+	font-weight:300;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+hr {
+	border-bottom: medium solid #2C97DE;
+	width: 60px;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+
+
+
+/********* BODY *************/
+
+body{
+	font-size: 18px;
+	font-family: Helvetica, Arial, sans-serif;
+	background-size: cover, no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/********** NAVIGATION ***********/
+
+nav{
+	float:right;
+	position: relative;
+	top: 25px;
+}
+
+nav li{
+	font-size:.8em;
+	font-weight:300;
+	float: left;
+	list-style: none;
+	padding-right: 20px;
+}
+
+nav li a{
+	text-decoration: none;
+	color:white;
+}
+
+nav li a:hover{
+	padding-bottom: 18px;
+	border-bottom: thick solid #2C97DE;
+}
+
+.navigation{
+	z-index:9999;
+	background-color:black;
+	height:10%;
+	width:100%;
+	position: fixed;
+	opacity:.7;
+
+	-webkit-transition: background-color 500ms ease-in-out 0.5s;
+    -moz-transition: background-color 500ms ease-in-out 0.5s;
+    -o-transition: background-color 500ms ease-in-out 0.5s;
+    transition: background-color 500ms ease-in-out 0.5s;
+}
+
+/********** HEADER ***********/
+
+header{
+/*	height:100vh;
+	min-height:600px;*/
+	/*background-color: black; no-repeat center center;*/	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.clearfix:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.logo{
+	float:left;
+}
+
+.logo img{
+	width:75%;
+	height:auto;
+	margin-left:10%;
+	margin-top:6%;
+}
+
+/********** HERO HOMEPAGE ***********/
+
+#hero{
+	width:100%;
+	height:90vh;
+	background-color:black;
+	background: url(../assets/portfolio_bg.png) center center no-repeat;
+	background-size: cover;
+}
+
+
+.self_portrait{
+	z-index:99999;
+	margin-top:25%;
+	position: fixed;
+	right: -300px;
+}
+
+.speech_bubble{
+	margin-top:15%;
+	position: fixed;
+	right: -300px;
+}
+
+.hero_title{
+	text-align:center;
+	display:block;
+	width:100%;
+	padding-top: 20%;
+}
+
+#hero h1{
+	font-weight:400;
+	font-size:4em;
+	color:white;
+}
+
+#hero p{
+	font-size:2em;
+	text-align:center;
+}
+
+/********** ME ME ME ********/
+
+#special{
+	margin-top:5%;
+	width:100%;
+	min-height:700px;
+	text-align:center;
+}
+
+#special h2{
+	font-weight: 500;
+	font-size:2em;
+	text-align: center;
+	padding-bottom:.5%;
+}
+
+#special p{
+	font-size:.8em;
+	padding-top:25%;
+	padding-left:25%;
+	width:75%;
+	text-align:center;
+}
+
+
+#special button{
+	margin-top:5%;	
+	border:0px;
+	width:120px;
+	height:50px;
+	background-color:#2C97DE;
+}
+
+#special button a{
+	text-decoration: none;
+	font-size:1em;
+	font-weight:300;
+	color:white;
+}
+
+/********** PROJECTS ***********/
+
+#work{
+	width:100%;
+/*	height:100vh;*/
+}
+
+#work h2{
+	font-weight: 400;
+	font-size:2em;
+	text-align:center;
+	margin-bottom:.5%;
+}
+
+#work article{
+	height: auto;
+	width: 48%;
+	margin: 3% 0 3% 1%;
+	overflow: hidden;
+	display:inline-block;
+	text-align:center;
+	position: relative;
+}
+
+#work article figcaption{
+	top:0;
+	width: 100%;
+	display: block;
+	height: 86%;
+	background-color:#2C97DE;
+	z-index: 999;
+	position:absolute;
+	opacity:0;
+}
+
+#work article figcaption:hover{
+	opacity:100;
+}
+
+#work article figcaption .description{
+	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+	color:white;
+}
+
+#work a {
+	text-decoration: none;
+	color:black;
+}
+
+#work h3{
+	font-weight:400;
+	padding-top:2%;
+	padding-bottom:0%;
+}
+
+.show_more{
+	text-align:center;
+}
+
+.show_more a{
+	color: black;
+	text-decoration: none;
+}
+
+/********** CONTACT ************/
+
+#contact{
+	background-color:black;
+	margin-top:10%;
+	width:100%;
+	height:auto;
+	min-height:680px;
+}
+
+.contact_container h2{
+	padding-top:5%;
+	font-weight: 500;
+	font-size:2em;
+	color:white;
+	text-align:center;
+	margin-bottom:.5%;
+}
+
+.contact_container h3{
+	font-size:1em;
+	font-weight:300;
+	color:white;
+	text-align:center;
+	margin-top:10%;
+	margin-bottom:1%;
+}
+
+.contact_container p{
+	font-size:2.5em;
+	font-weight:300;
+	color:white;
+	text-align:center;
+}
+
+.social p a{
+	text-decoration: none;
+	color:#2C97DE;
+}
+
+.social li{
+	margin-top: 10%;
+	width:24%;
+	display:inline-block;
+	text-align:center;
+}
+
+.social li a{
+	font-size:1em;
+	padding-left:25%;
+	color:white;
+	text-decoration: none;
+}
+
+.social i{
+	display:block;
+}
+
+.dueces{
+	z-index: 999;
+	position: fixed;
+	top:30%;
+	right:-50%;
+}
+
+
+
+/*********** FOOTER ************/
+
+.copyright_container p{
+	font-weight:300;
+	background-color:black;
+	color:#777777;
+	text-align:center;
+}
+
+
+
+
+/********** !!!!!PULSEBAND!!!!!!! ***********/
+
+
+/** PB HERO **/
+
+#hero_pulseband{
+	width:100%;
+	height:100vh;
+	background-image: url(../assets/pulseband_splash-14.png);
+	
+}
+
+#hero_pulseband{
+	background-size: cover, no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#hero_pulseband h1{
+	font-size: 3em;
+	color: white;
+	text-align:center;
+	padding-top: 20%;
+}
+
+#hero_pulseband p{
+	font-size: 1em;
+	color:white;
+	text-align:center;
+}
+
+/** PROJECT DESCRIPTION **/
+
+#PB_description{
+	width:100%;
+	min-height:400px;
+}
+
+#PB_description h2{
+	padding-top:5%;
+	padding-bottom:2%;
+	text-align:center;
+
+}
+
+#PB_description b {
+	font-weight: bold;
+}
+#PB_description h3{
+	width:60%;
+	margin: 0 auto;
+	font-size:1em;
+	font-weight:300;
+	padding-top:1%;
+	text-align:left;
+
+}
+#PB_description p{
+	font-size: .8em;
+	line-height:200%;
+	font-weight:300;
+	width:60%;
+	padding-top:2%;
+	margin:0 auto;
+}
+
+/** UX RESEARCH **/
+
+#PB_UX{
+	background-color:#E5E5E5;
+}
+
+#PB_UX h2{
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#PB_UX h3{
+	text-align:center;
+	padding-top: 5%;
+	padding-bottom: 1%;
+}
+
+
+#PB_UX p{
+	width:60%;
+	font-size:.8em;
+	margin: 0 auto;
+	line-height: 200%;
+}
+
+.wireframes{
+	width:90%;
+	padding-left:5%;
+	padding-bottom:5%;
+}
+
+/** UI VISUAL DESIGN **/
+
+#PB_UI{
+	width:100%;
+	height:auto;
+}
+
+#PB_UI h2{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#PB_UI h3{
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#PB_UI p{
+	width:60%;
+	font-size: .8em;
+	margin:0 auto;
+	line-height:200%;
+}
+
+
+
+
+/**PULSEBAND LOGO **/
+
+.logo_part{
+	width: 100%;
+	background-color: white;
+}
+
+.pblogo{
+	width: 100%;
+	height:auto;
+}
+
+.pblogo li{
+	
+	list-style:none;
+	margin-left:8%;
+	width:25%;
+	height:auto;
+	display: inline-block;
+}
+
+.pblogo li img{
+	width:50%;
+}
+
+/**STYLE TILES**/
+
+.styleT ul{
+	width:100%;
+}
+.styleT li{
+	width:49%;
+	height:auto;
+	display: inline-block;
+	list-style: none;
+}
+
+.styleT li img {
+	width: 100%;
+}
+/**KEY SCREENS**/
+
+.keyS ul{
+	width:100%;
+}
+
+.keyS li{
+	width: 48%;
+	list-style:none;
+	display: inline-block;
+}
+
+.keyS li img {
+	width: 100%;
+	/*box-shadow: 0px 0px 5px #777777;*/
+}
+
+/** BUTTONS **/
+
+footer section{
+	text-align: center;
+}
+footer button { 
+	font-weight:300;
+	margin-top:5%;	
+	border:none;
+	width:180px;
+	height:50px;
+	background-color:#2C97DE;
+}
+
+footer button a{
+	text-decoration: none;
+	font-size:1em;
+	color:white;
+}
+
+
+
+/********** !!!!!DEN!!!!!!! ***********/
+
+/** HERO DEN **/
+
+
+#hero_den{
+	width:100%;
+	height:100vh;
+	background-image: url(../assets/den_hero-01.png);
+	
+}
+
+#hero_den{
+	background-size: cover, no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#hero_den h1{
+	font-size: 3em;
+	color: white;
+	text-align:center;
+	padding-top: 20%;
+}
+
+#hero_den p{
+	font-size: 1em;
+	color:white;
+	text-align:center;
+}
+
+/** PROJECT DESCRIPTION **/
+
+#DEN_description{
+	width:100%;
+	min-height:400px;
+}
+
+#DEN_description h2{
+	padding-top:5%;
+	padding-bottom:2%;
+	text-align:center;
+
+}
+
+#DEN_description b {
+	font-weight: bold;
+}
+#DEN_description h3{
+	width:60%;
+	margin: 0 auto;
+	font-size:1em;
+	font-weight:300;
+	padding-top:1%;
+	text-align:left;
+
+}
+#DEN_description p{
+	font-size: .8em;
+	line-height:200%;
+	font-weight:300;
+	width:60%;
+	padding-top:2%;
+	margin:0 auto;
+}
+
+
+/** UI VISUAL DESIGN **/
+
+#DEN_UI{
+	width:100%;
+	height:auto;
+}
+
+#DEN_UI h2{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#DEN_UI h3{
+	text-align:center;
+	padding-top:5%;
+}
+
+#DEN_UI h4{
+	text-align:center;
+	padding-top:2%;
+}
+
+
+#DEN_UI p{
+	width:60%;
+	font-size: .8em;
+	margin:0 auto;
+	line-height:200%;
+}
+
+
+
+
+/**DEN LOGO **/
+
+.den_logo_part{
+	width: 100%;
+	background-color: white;
+}
+
+.DENlogo{
+	width: 100%;
+	height:auto;
+}
+
+.DENlogo li{
+	
+	list-style:none;
+	margin-left:8%;
+	width:25%;
+	height:auto;
+	display: inline-block;
+}
+
+.DENlogo li img{
+	width:50%;
+}
+
+/**STYLE TILES**/
+
+.DENstyleT ul{
+	width:100%;
+}
+.DENstyleT li{
+	margin: 0 auto;
+	width:49%;
+	height:auto;
+	list-style: none;
+}
+
+.DENstyleT li img {
+	width: 100%;
+
+}
+/**KEY SCREENS**/
+
+.DENkeyS ul{
+	width:100%;
+}
+
+.DENkeyS li{
+	text-align:center;
+	width: 100%;
+	list-style:none;
+	display: inline-block;
+}
+
+.DENkeyS li img {
+	width: 50%;
+}
+
+
+/********** !!!!!SMARTYETI!!!!!!! ***********/
+
+/** HERO SMARTYETI **/
+
+
+#hero_smartYETI{
+	width:100%;
+	height:100vh;
+	background-image: url(../assets/smartYETI-04.png);
+	
+}
+
+#hero_smartYETI{
+	background-size: cover, no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+
+#hero_smartYETI h1{
+	font-size: 3em;
+	color: white;
+	text-align:center;
+	padding-top: 20%;
+}
+
+#hero_smartYETI p{
+	font-size: 1em;
+	color:white;
+	text-align:center;
+}
+
+/** PROJECT DESCRIPTION **/
+
+#smartYETI_description{
+	width:100%;
+	min-height:400px;
+}
+
+#smartYETI_description h2{
+	padding-top:5%;
+	padding-bottom:2%;
+	text-align:center;
+
+}
+
+#smartYETI_description b {
+	font-weight: bold;
+}
+#smartYETI_description h3{
+	width:60%;
+	margin: 0 auto;
+	font-size:1em;
+	font-weight:300;
+	padding-top:1%;
+	text-align:left;
+
+}
+#smartYETI_description p{
+	font-size: .8em;
+	line-height:200%;
+	font-weight:300;
+	width:60%;
+	padding-top:2%;
+	margin:0 auto;
+}
+
+
+/** UI VISUAL DESIGN **/
+
+#smartYETI_UI{
+	width:100%;
+	height:auto;
+}
+
+#smartYETI_UI h2{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#smartYETI_UI h3{
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#smartYETI_UI h4{
+	text-align:center;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+
+
+#smartYETI_UI p{
+	width:60%;
+	font-size: .8em;
+	margin:0 auto;
+	line-height:200%;
+}
+
+
+
+
+/**SMART YETI LOGO **/
+
+.smartYETI_logo_part{
+	width: 100%;
+	background-color: white;
+}
+
+.smartYETIlogo{
+	width: 100%;
+	height:auto;
+}
+
+.smartYETIlogo li{
+	
+	list-style:none;
+	margin-left:8%;
+	width:25%;
+	height:auto;
+	display: inline-block;
+}
+
+.smartYETIlogo li img{
+	width:50%;
+}
+
+/**STYLE TILES**/
+
+.smartYETIstyleT ul{
+	width:100%;
+}
+.smartYETIstyleT li{
+	margin: 0 auto;
+	width:49%;
+	height:auto;
+	list-style: none;
+}
+
+.smartYETIstyleT li img {
+	width: 100%;
+
+}
+/**KEY SCREENS**/
+
+.smartYETIkeyS ul{
+	width:100%;
+}
+
+.smartYETIkeyS li{
+	text-align:center;
+	width: 100%;
+	list-style:none;
+	display: inline-block;
+}
+
+.smartYETIkeyS li img {
+	width: 50%;
+}
+
+
+/********** !!!!!YUMSCORE!!!!!!! ***********/
+
+/** YUMSCORE HERO **/
+
+
+#hero_YUMSCORE{
+	width:100%;
+	height:100vh;
+	background-image: url(../assets/yumscoreHERO.png);
+	
+}
+
+#hero_YUMSCORE{
+	background-size: cover, no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+
+
+#hero_YUMSCORE h1{
+	font-size: 3em;
+	color: white;
+	text-align:center;
+	padding-top: 20%;
+}
+
+#hero_YUMSCORE p{
+	font-size: 1em;
+	color:white;
+	text-align:center;
+}
+
+/** PROJECT DESCRIPTION **/
+
+#YUMSCORE_description{
+	width:100%;
+	min-height:400px;
+}
+
+#YUMSCORE_description h2{
+	padding-top:5%;
+	padding-bottom:2%;
+	text-align:center;
+
+}
+
+#YUMSCORE_description b {
+	font-weight: bold;
+}
+#YUMSCORE_description h3{
+	width:60%;
+	margin: 0 auto;
+	font-size:1em;
+	font-weight:300;
+	padding-top:1%;
+	text-align:left;
+
+}
+#YUMSCORE_description p{
+	font-size: .8em;
+	line-height:200%;
+	font-weight:300;
+	width:60%;
+	padding-top:2%;
+	margin:0 auto;
+}
+
+
+/** UI VISUAL DESIGN **/
+
+#YUMSCORE_UI{
+	width:100%;
+	height:auto;
+}
+
+#YUMSCORE_UI h2{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#YUMSCORE_UI h3{
+	text-align:center;
+	padding-top:5%;
+	padding-bottom:2%;
+}
+
+#YUMSCORE_UI p{
+	width:60%;
+	font-size: .8em;
+	margin:0 auto;
+	line-height:200%;
+}
+
+
+
+
+/**YUMSCORE LOGO **/
+
+.YUMSCORE_logo_part{
+	width: 100%;
+	background-color: white;
+}
+
+.YUMSCORElogo{
+	width: 100%;
+	height:auto;
+}
+
+.YUMSCORElogo li{
+	
+	list-style:none;
+	margin-left:8%;
+	width:25%;
+	height:auto;
+	display: inline-block;
+}
+
+.YUMSCORElogo li img{
+	width:50%;
+}
+
+/**STYLE TILES**/
+
+.YUMSCOREstyleT ul{
+	width:100%;
+}
+.YUMSCOREstyleT li{
+	margin: 0 auto;
+	width:49%;
+	height:auto;
+	list-style: none;
+}
+
+.YUMSCOREstyleT li img {
+	width: 100%;
+
+}
+/**KEY SCREENS**/
+
+.YUMSCOREkeyS ul{
+	width:100%;
+}
+
+.YUMSCOREkeyS li{
+	width: 100%;
+	list-style:none;
+	display: inline-block;
+}
+
+.YUMSCOREkeyS li img {
+	width: 100%;
+}
+
+
+/** BUTTONS **/
+
+footer section{
+	text-align: center;
+}
+footer button { 
+	font-weight:300;
+	margin-top:5%;	
+	border:none;
+	width:180px;
+	height:50px;
+	background-color:#2C97DE;
+}
+
+footer button a{
+	text-decoration: none;
+	font-size:1em;
+	color:white;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+
+#special ul li{
+	display:inline-block;
+	margin-top: 15%;
+	text-align:center;
+	width: 25%;
+	padding:0;
+
+}
+
+.self_portrait{
+	margin-top:42%;
+	position: fixed;
+	right: -300px;
+}
+
+.speech_bubble{
+	margin-top:32%;
+	position: fixed;
+	right: -300px;
+}
+
+@media screen and (max-width: 768px){
+
+#special ul li{
+	display:inline-block;
+	margin-top: 15%;
+	width: 100%;
+}
+
+#work{
+	text-align:center;
+}
+
+#work article{
+	height:30%;
+	width: 78%;
+	text-align:center;
+
+}	
+
+.self_portrait{
+	margin-top:46%;
+	position: fixed;
+	right: -300px;
+}
+
+.speech_bubble{
+	margin-top:36%;
+	position: fixed;
+	right: -300px;
+}
+
+
+
+@media screen and (max-width:480px){
+
+#special ul li{
+	display:inline-block;
+	margin-top: 15%;
+	width: 100%;
+}
+
+.self_portrait{
+	margin-top:75%;
+	position: fixed;
+	right: -300px;
+}
+
+.speech_bubble{
+	margin-top:43%;
+	position: fixed;
+	right: -300px;
+}
+
